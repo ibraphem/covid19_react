@@ -7,7 +7,7 @@ const Header = (props) => {
     return ( 
         <header>
             <img src={covid} alt="covid19"/>
-            <div className="logo">Covid 19 Fact Check</div>
+            <div className="logo">Covid19 Fact Check</div>
             <input 
                 type="text" onChange={props.keywords} placeholder="Enter your country"
                 

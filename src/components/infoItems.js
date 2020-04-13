@@ -13,7 +13,7 @@ class infoItems extends Component {
         if((this.props.ind + 1) % 3 === 1){
                 return(
             
-                <div className="listing-item col-md-12" id="lis">
+                <div className="listing-item" id="lis">
                             <figure className="ima">
                                 <img src={this.props.item.countryInfo.flag}  alt="flag"/>
                                 <figcaption>
@@ -37,7 +37,7 @@ class infoItems extends Component {
           
         } else if((this.props.ind + 1) % 3 === 2){
             return(
-                <div className="listing-item col-md-12" id="lis">
+                <div className="listing-item" id="lis">
                 <figure className="ima">
                     <img src={this.props.item.countryInfo.flag}  alt="flag"/>
                     <figcaption>
@@ -60,7 +60,7 @@ class infoItems extends Component {
        
         } else if((this.props.ind + 1) % 3 === 2){
             return(
-                <div className="listing-item col-md-12" id="lis">
+                <div className="listing-item" id="lis">
                 <figure className="ima">
                     <img src={this.props.item.countryInfo.flag} alt="flag"/>
                     <figcaption>
@@ -86,7 +86,7 @@ class infoItems extends Component {
     render() {
         console.log(this.props.item)
         return (
-            <div className="container-fluid ">
+            <div class="hover-table-layout">
                 {this.info()}
             </div>
         );
