@@ -5,6 +5,7 @@ import axios from "axios";
 //Components
 import Header from "./components/header";
 import Infolist from "./components/infoList";
+import Footer from "./components/footer";
 
 class App extends Component {
 
@@ -48,6 +49,7 @@ getKeyword = (event) => {
         <Infolist list={infoFiltered.length === 0 ? infoWhole : infoFiltered}>
          
         </Infolist>
+        <Footer/>
       </div>
     );
   }
