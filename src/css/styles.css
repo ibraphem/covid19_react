@@ -54,18 +54,18 @@ input[type=text] {
     margin-top: 100px;
   }
 #lis {
-    width: 400px;
+    width: 370px;
     height: 600px;
 }
 
 #lit {
-    width: 400px;
+    width: 370px;
     height: 600px;
 }
 
 #liu {
-    width: 400px;
-    height: 700px;
+    width: 370px;
+    height: 600px;
 }
   .hover-table-layout {
     display: -webkit-box;
