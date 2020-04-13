@@ -54,17 +54,17 @@ input[type=text] {
     margin-top: 100px;
   }
 #lis {
-    width: 370px;
+    width: 350px;
     height: 600px;
 }
 
 #lit {
-    width: 370px;
+    width: 350px;
     height: 600px;
 }
 
 #liu {
-    width: 370px;
+    width: 350px;
     height: 600px;
 }
   .hover-table-layout {
@@ -83,7 +83,7 @@ input[type=text] {
   .listing-item {
      display: block;
       width:100%;
-      margin-bottom:20px;
+      margin:20px;
       margin-top: 10px;
       float: left;
      
@@ -91,7 +91,7 @@ input[type=text] {
       border-radius:10px;
       z-index:0;
       cursor:pointer;
-      margin-left: 45px;
+      
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease;
