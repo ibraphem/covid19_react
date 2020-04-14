@@ -45,6 +45,7 @@ class infoItems extends Component {
                     <figcaption>
                     <div className="caption">
                         <h1>{this.props.item.country}</h1>
+                        <p>{ Today }</p>
                         </div>
                     </figcaption>
                 </figure>
@@ -68,6 +69,7 @@ class infoItems extends Component {
                     <figcaption>
                     <div className="caption">
                         <h1>{this.props.item.country}</h1>
+                        <p>{ Today }</p>
                         </div>
                     </figcaption>
                 </figure>
