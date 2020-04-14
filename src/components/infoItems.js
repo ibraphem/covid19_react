@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import covid from "../image/covid.png";
 
+import { Today } from "../config";
 
 class infoItems extends Component {
 
@@ -19,6 +20,7 @@ class infoItems extends Component {
                                 <figcaption>
                                 <div className="caption">
                                     <h1>{this.props.item.country}</h1>
+                                    <p>{ Today }</p>
                                     </div>
                                 </figcaption>
                             </figure>
