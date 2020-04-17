@@ -17,7 +17,7 @@ class App extends Component {
  
 
   componentDidMount() {
-    axios.get(`https://corona.lmao.ninja/countries`)
+    axios.get(`https://corona.lmao.ninja/v2/countries`)
     .then(response => {
       this.setState({
         info: response.data
