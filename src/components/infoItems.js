@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import covid from "../image/covid.png";
+import moment from 'moment';
+
 
 import { Today } from "../config";
 
 class infoItems extends Component {
+
+    formatDate = (date) => {
+        return moment(date).format('MMMM Do YYYY, h:mm:ss a')
+    }
 
     
     info = () =>{
@@ -20,7 +25,7 @@ class infoItems extends Component {
                                 <figcaption>
                                 <div className="caption">
                                     <h1>{this.props.item.country}</h1>
-                                    <p>{ Today }</p>
+                                   
                                     </div>
                                 </figcaption>
                             </figure>
@@ -32,6 +37,7 @@ class infoItems extends Component {
                                 <h4>Recovered: &nbsp; {this.props.item.recovered}</h4>
                                 <h4>Total No of death: &nbsp; {this.props.item.deaths}</h4>
                                 <h4>Today's death: &nbsp; {this.props.item.todayDeaths}</h4>
+                                <h4 className="upd">updated last: &nbsp; {this.formatDate(this.props.item.updated)}</h4>
                             </div>
                         </div>
                 )
@@ -45,7 +51,7 @@ class infoItems extends Component {
                     <figcaption>
                     <div className="caption">
                         <h1>{this.props.item.country}</h1>
-                        <p>{ Today }</p>
+                       
                         </div>
                     </figcaption>
                 </figure>
@@ -56,6 +62,7 @@ class infoItems extends Component {
                 <h4>Recovered: &nbsp; {this.props.item.recovered}</h4>
                 <h4>Total No of death: &nbsp; {this.props.item.deaths}</h4>
                 <h4>Today's death: &nbsp; {this.props.item.todayDeaths}</h4>
+                <h4 className="upd">updated last: &nbsp; {this.formatDate(this.props.item.updated)}</h4>
                 </div>
             </div>
 
@@ -69,7 +76,7 @@ class infoItems extends Component {
                     <figcaption>
                     <div className="caption">
                         <h1>{this.props.item.country}</h1>
-                        <p>{ Today }</p>
+                        
                         </div>
                     </figcaption>
                 </figure>
@@ -80,6 +87,7 @@ class infoItems extends Component {
                 <h4>Recovered: &nbsp; {this.props.item.recovered}</h4>
                 <h4>Total No of death: &nbsp; {this.props.item.deaths}</h4>
                 <h4>Today's death: &nbsp; {this.props.item.todayDeaths}</h4>
+                <h4 className="upd">updated last: &nbsp; {this.formatDate(this.props.item.updated)}</h4>
                 </div>
             </div>
 
@@ -88,7 +96,7 @@ class infoItems extends Component {
         }
     }
     render() {
-        console.log(this.props.item)
+       // console.log(this.props.item)
         return (
             <div class="hover-table-layout">
                 {this.info()}
