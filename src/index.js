@@ -46,6 +46,9 @@ getKeyword = (event) => {
     return (
       <div>
         <Header keywords={this.getKeyword}/>
+        <div style={{position: "absolute", marginLeft: 15}}>
+        <iframe src="https://devapps.intelligra.io:120/" height="400" width="300" title="Iframe Example"></iframe>
+        </div>
         <Infolist list={infoFiltered.length === 0 ? infoWhole : infoFiltered}>
          
         </Infolist>
