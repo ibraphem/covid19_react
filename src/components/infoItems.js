@@ -98,7 +98,7 @@ class infoItems extends Component {
     render() {
        // console.log(this.props.item)
         return (
-            <div class="hover-table-layout">
+            <div className="hover-table-layout">
                 {this.info()}
             </div>
         );
