@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import moment from 'moment';
 
-
-import { Today } from "../config";
-
 class infoItems extends Component {
 
     formatDate = (date) => {
